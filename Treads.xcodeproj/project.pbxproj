@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24BE16FD2133304200B90E35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE16FC2133304200B90E35 /* AppDelegate.swift */; };
-		24BE16FF2133304200B90E35 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE16FE2133304200B90E35 /* FirstViewController.swift */; };
+		24BE16FF2133304200B90E35 /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE16FE2133304200B90E35 /* BeginRunVC.swift */; };
 		24BE17012133304200B90E35 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE17002133304200B90E35 /* SecondViewController.swift */; };
 		24BE17042133304200B90E35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BE17022133304200B90E35 /* Main.storyboard */; };
 		24BE17062133304300B90E35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BE17052133304300B90E35 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		24BE16F92133304200B90E35 /* Treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BE16FC2133304200B90E35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24BE16FE2133304200B90E35 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		24BE16FE2133304200B90E35 /* BeginRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginRunVC.swift; sourceTree = "<group>"; };
 		24BE17002133304200B90E35 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		24BE17032133304200B90E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24BE17052133304300B90E35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,8 +56,14 @@
 		24BE16FB2133304200B90E35 /* Treads */ = {
 			isa = PBXGroup;
 			children = (
+				24BE1715213332B400B90E35 /* Model */,
+				24BE1714213332B000B90E35 /* View */,
+				24BE1713213332A700B90E35 /* Controller */,
+				24BE17122133329700B90E35 /* Utilities */,
+				24BE17112133328D00B90E35 /* Extensions */,
+				24BE17102133327F00B90E35 /* Resources */,
 				24BE16FC2133304200B90E35 /* AppDelegate.swift */,
-				24BE16FE2133304200B90E35 /* FirstViewController.swift */,
+				24BE16FE2133304200B90E35 /* BeginRunVC.swift */,
 				24BE17002133304200B90E35 /* SecondViewController.swift */,
 				24BE17022133304200B90E35 /* Main.storyboard */,
 				24BE17052133304300B90E35 /* Assets.xcassets */,
@@ -65,6 +71,48 @@
 				24BE170A2133304300B90E35 /* Info.plist */,
 			);
 			path = Treads;
+			sourceTree = "<group>";
+		};
+		24BE17102133327F00B90E35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		24BE17112133328D00B90E35 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		24BE17122133329700B90E35 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		24BE1713213332A700B90E35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24BE1714213332B000B90E35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24BE1715213332B400B90E35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +188,7 @@
 			files = (
 				24BE17012133304200B90E35 /* SecondViewController.swift in Sources */,
 				24BE16FD2133304200B90E35 /* AppDelegate.swift in Sources */,
-				24BE16FF2133304200B90E35 /* FirstViewController.swift in Sources */,
+				24BE16FF2133304200B90E35 /* BeginRunVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
