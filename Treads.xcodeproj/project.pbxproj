@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2428FABE2134B5F400BCB224 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428FABD2134B5F400BCB224 /* LocationVC.swift */; };
 		24BE16FD2133304200B90E35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE16FC2133304200B90E35 /* AppDelegate.swift */; };
 		24BE16FF2133304200B90E35 /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE16FE2133304200B90E35 /* BeginRunVC.swift */; };
 		24BE17012133304200B90E35 /* RunLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE17002133304200B90E35 /* RunLogVC.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2428FABD2134B5F400BCB224 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		24BE16F92133304200B90E35 /* Treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BE16FC2133304200B90E35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24BE16FE2133304200B90E35 /* BeginRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginRunVC.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				24BE16FE2133304200B90E35 /* BeginRunVC.swift */,
 				24BE17002133304200B90E35 /* RunLogVC.swift */,
+				2428FABD2134B5F400BCB224 /* LocationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				24BE17012133304200B90E35 /* RunLogVC.swift in Sources */,
 				24BE16FD2133304200B90E35 /* AppDelegate.swift in Sources */,
+				2428FABE2134B5F400BCB224 /* LocationVC.swift in Sources */,
 				24BE16FF2133304200B90E35 /* BeginRunVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
