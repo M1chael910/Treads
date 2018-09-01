@@ -19,7 +19,7 @@ class BeginRunVC: LocationVC {
         mapView.delegate = self
     }
     override func viewWillAppear(_ animated: Bool) {
-        manager?.delegate = self as CLLocationManagerDelegate
+        manager?.delegate = self
         manager?.startUpdatingLocation()
     }
     
