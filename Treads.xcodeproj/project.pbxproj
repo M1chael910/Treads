@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2428FABE2134B5F400BCB224 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428FABD2134B5F400BCB224 /* LocationVC.swift */; };
+		2486658B2138C9CE001B4B15 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486658A2138C9CE001B4B15 /* CurrentRunVC.swift */; };
 		24BE16FD2133304200B90E35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE16FC2133304200B90E35 /* AppDelegate.swift */; };
 		24BE16FF2133304200B90E35 /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE16FE2133304200B90E35 /* BeginRunVC.swift */; };
 		24BE17012133304200B90E35 /* RunLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BE17002133304200B90E35 /* RunLogVC.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		2428FABD2134B5F400BCB224 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		2486658A2138C9CE001B4B15 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
 		24BE16F92133304200B90E35 /* Treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BE16FC2133304200B90E35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24BE16FE2133304200B90E35 /* BeginRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginRunVC.swift; sourceTree = "<group>"; };
@@ -97,9 +99,10 @@
 		24BE1713213332A700B90E35 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2428FABD2134B5F400BCB224 /* LocationVC.swift */,
 				24BE16FE2133304200B90E35 /* BeginRunVC.swift */,
 				24BE17002133304200B90E35 /* RunLogVC.swift */,
-				2428FABD2134B5F400BCB224 /* LocationVC.swift */,
+				2486658A2138C9CE001B4B15 /* CurrentRunVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2486658B2138C9CE001B4B15 /* CurrentRunVC.swift in Sources */,
 				24BE17012133304200B90E35 /* RunLogVC.swift in Sources */,
 				24BE16FD2133304200B90E35 /* AppDelegate.swift in Sources */,
 				2428FABE2134B5F400BCB224 /* LocationVC.swift in Sources */,
