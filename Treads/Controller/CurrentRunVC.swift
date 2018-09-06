@@ -20,14 +20,13 @@ class CurrentRunVC: LocationVC {
     @IBOutlet weak var sliderImageVIew: UIImageView!
     @IBOutlet weak var pauseBtn: UIButton!
     
-    
     // Variables
-    
-    
     
     var startLocation: CLLocation!
     var lastLocation: CLLocation!
+    var timer = Timer()
     var runDistance = 0.0
+    var counter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +45,7 @@ class CurrentRunVC: LocationVC {
     
     func StartRun() {
         manager?.startUpdatingLocation()
+        startTimer()
     }
     
     
@@ -53,7 +53,17 @@ class CurrentRunVC: LocationVC {
         manager?.stopUpdatingLocation()
     }
     
+    func startTimer() {
+        durationLbl.text = counter.formatTimeDurationToString()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+        
+    }
     
+    @objc func updateCounter() {
+        counter += 1
+        durationLbl.text = counter.formatTimeDurationToString()
+        
+    }
     
     @IBAction func pauseBtnPressed(_ sender: Any) {
         
@@ -103,7 +113,7 @@ extension CurrentRunVC: CLLocationManagerDelegate {
             startLocation = locations.first
         } else if let location = locations.last {
             runDistance += lastLocation.distance(from: location)
-            distanceLbl.text = "\(runDistance)"
+            distanceLbl.text = "\(runDistance.metersToMiles(places: 2))"
         }
         lastLocation = locations.last
     }
