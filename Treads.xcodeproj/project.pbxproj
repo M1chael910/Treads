@@ -19,6 +19,7 @@
 		24BE17092133304300B90E35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BE17072133304300B90E35 /* LaunchScreen.storyboard */; };
 		24C9E4AE2140B8670095E9AA /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9E4AD2140B8670095E9AA /* Run.swift */; };
 		24C9E4B02140BE980095E9AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9E4AF2140BE980095E9AA /* Constants.swift */; };
+		24C9E4B22140C1C70095E9AA /* RunLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9E4B12140C1C70095E9AA /* RunLogCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		24BE170A2133304300B90E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24C9E4AD2140B8670095E9AA /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		24C9E4AF2140BE980095E9AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		24C9E4B12140C1C70095E9AA /* RunLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogCell.swift; sourceTree = "<group>"; };
 		83A8C7ACF1128163D39127F7 /* Pods-Treads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Treads.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Treads/Pods-Treads.debug.xcconfig"; sourceTree = "<group>"; };
 		B0039F5946FD79ED27BA801C /* Pods-Treads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Treads.release.xcconfig"; path = "Pods/Target Support Files/Pods-Treads/Pods-Treads.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 		24BE1714213332B000B90E35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				24C9E4B12140C1C70095E9AA /* RunLogCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				24BE16FD2133304200B90E35 /* AppDelegate.swift in Sources */,
 				2428FABE2134B5F400BCB224 /* LocationVC.swift in Sources */,
 				24C9E4AE2140B8670095E9AA /* Run.swift in Sources */,
+				24C9E4B22140C1C70095E9AA /* RunLogCell.swift in Sources */,
 				24BE16FF2133304200B90E35 /* BeginRunVC.swift in Sources */,
 				24C9E4B02140BE980095E9AA /* Constants.swift in Sources */,
 			);

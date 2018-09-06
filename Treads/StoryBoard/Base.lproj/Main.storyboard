@@ -111,7 +111,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RunLogCell" rowHeight="92" id="Zdj-Cz-0AQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RunLogCell" rowHeight="92" id="Zdj-Cz-0AQ" customClass="RunLogCell" customModule="Treads" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zdj-Cz-0AQ" id="wLy-5l-NkN">
@@ -166,22 +166,38 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPA-o1-gwC">
+                                                    <rect key="frame" x="0.0" y="91" width="375" height="1"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="jvL-0V-rEj"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="EAA-hJ-0fV" firstAttribute="centerY" secondItem="wLy-5l-NkN" secondAttribute="centerY" id="55P-yN-ZwF"/>
                                                 <constraint firstItem="FBe-Zp-USI" firstAttribute="centerX" secondItem="wLy-5l-NkN" secondAttribute="centerX" id="F7O-O6-OuU"/>
+                                                <constraint firstAttribute="bottom" secondItem="aPA-o1-gwC" secondAttribute="bottom" id="Fuz-UK-h1L"/>
                                                 <constraint firstItem="EAA-hJ-0fV" firstAttribute="leading" secondItem="wLy-5l-NkN" secondAttribute="leadingMargin" constant="8" id="HZB-UA-MXu"/>
                                                 <constraint firstItem="rOa-z7-8Fd" firstAttribute="centerY" secondItem="wLy-5l-NkN" secondAttribute="centerY" id="MrG-I5-7KT"/>
+                                                <constraint firstItem="aPA-o1-gwC" firstAttribute="leading" secondItem="wLy-5l-NkN" secondAttribute="leading" id="RZJ-N5-JZz"/>
                                                 <constraint firstAttribute="bottom" secondItem="aVH-ud-b0Z" secondAttribute="bottom" id="drc-f5-VWr"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="rOa-z7-8Fd" secondAttribute="trailing" constant="8" id="hJn-Hi-ns3"/>
                                                 <constraint firstItem="FBe-Zp-USI" firstAttribute="centerY" secondItem="wLy-5l-NkN" secondAttribute="centerY" id="j9W-Dj-4VB"/>
                                                 <constraint firstAttribute="trailing" secondItem="aVH-ud-b0Z" secondAttribute="trailing" id="jOS-kA-we5"/>
                                                 <constraint firstItem="aVH-ud-b0Z" firstAttribute="top" secondItem="wLy-5l-NkN" secondAttribute="top" id="li6-B4-6aX"/>
+                                                <constraint firstAttribute="trailing" secondItem="aPA-o1-gwC" secondAttribute="trailing" id="r0F-Lo-9St"/>
                                                 <constraint firstItem="aVH-ud-b0Z" firstAttribute="leading" secondItem="wLy-5l-NkN" secondAttribute="leading" id="yG0-4x-2if"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="averagePaceLbl" destination="NE4-M4-Uby" id="shd-Js-K3d"/>
+                                            <outlet property="dateLbl" destination="rOa-z7-8Fd" id="pgd-xr-b1f"/>
+                                            <outlet property="runDurationLbl" destination="Re7-UA-gnH" id="c4T-36-TVi"/>
+                                            <outlet property="totalDistanceLbl" destination="M7F-r8-wSP" id="ebV-0N-BtA"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -202,6 +218,9 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Log" image="tabbar-myLogIconGray" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="tableView" destination="Tzr-tA-jhL" id="gx7-Si-hQz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

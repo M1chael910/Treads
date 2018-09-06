@@ -35,3 +35,14 @@ extension Int {
     }
 }
 
+
+extension Date {
+    func getDateString() -> String {
+        let calander = Calendar.current
+        let month = calander.component(.month, from: self as Date)
+        let day = calander.component(.day, from: self as Date)
+        let year = calander.component(.year, from: self as Date)
+        return "\(month)/\(day)/\(year)"
+    }
+}
+
