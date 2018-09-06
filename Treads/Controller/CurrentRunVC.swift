@@ -53,7 +53,7 @@ class CurrentRunVC: LocationVC {
     
     func EndRun() {
         manager?.stopUpdatingLocation()
-        //Add Our object to realm
+        Run.addRunToToRealm(pace: pace, distance: runDistance, duration: counter)
     }
     
     func pauseRun() {
@@ -77,7 +77,6 @@ class CurrentRunVC: LocationVC {
     
     func calculatePace(time seconds: Int, miles: Double) -> String {
         pace = Int(Double(seconds) / miles)
-        print(pace)
         return pace.formatTimeDurationToString()
     }
     

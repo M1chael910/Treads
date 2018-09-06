@@ -17,6 +17,7 @@ class BeginRunVC: LocationVC {
         super.viewDidLoad()
         checkLocationAuthStatus()
         mapView.delegate = self
+        print(Run.getAllRuns())
     }
     override func viewWillAppear(_ animated: Bool) {
         manager?.delegate = self
