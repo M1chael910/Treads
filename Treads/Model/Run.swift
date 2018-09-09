@@ -26,7 +26,7 @@ class Run: Object {
     }
     
     
-    convenience init(pace: Int,distance: Double,duration: Int) {
+    convenience init(pace: Int, distance: Double, duration: Int) {
         self.init()
         self.id = UUID().uuidString.lowercased()
         self.date = Date()

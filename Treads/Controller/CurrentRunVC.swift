@@ -116,9 +116,6 @@ class CurrentRunVC: LocationVC {
 }
 
 
-
-
-
 extension CurrentRunVC: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse {

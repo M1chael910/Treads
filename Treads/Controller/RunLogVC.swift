@@ -18,6 +18,10 @@ class RunLogVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 }
 
 extension RunLogVC: UITableViewDelegate, UITableViewDataSource {
