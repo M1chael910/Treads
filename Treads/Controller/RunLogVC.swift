@@ -22,6 +22,9 @@ class RunLogVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
     }
+    
+    
+    
 }
 
 extension RunLogVC: UITableViewDelegate, UITableViewDataSource {
@@ -42,7 +45,6 @@ extension RunLogVC: UITableViewDelegate, UITableViewDataSource {
         }
         
     }
-    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 92
