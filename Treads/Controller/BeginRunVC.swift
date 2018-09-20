@@ -70,10 +70,17 @@ class BeginRunVC: LocationVC {
         
         return MKPolyline(coordinates: coordinate, count: lastRun.locations.count)
     }
+    
+    
+    func centerMapOnUserLocation() {
+        mapView.userTrackingMode = .follow
+        let coordinateRegion = MKCoordinateRegion(center: mapView.userLocation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
 
 
     @IBAction func locationCenterBtnPressed(_ sender: Any) {
-        
+        centerMapOnUserLocation()
     }
     
     @IBAction func lastRunCloseBtnPressed(_ sender: UIButton) {
